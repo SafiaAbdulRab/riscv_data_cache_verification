@@ -2,10 +2,10 @@ class data_cache_scoreboard extends uvm_subscriber #(seq_item);
 
     `uvm_component_utils(data_cache_scoreboard)
 
-    // Expected cache contents
+    // Expected cache
     logic [31:0] expected_data [0:15];
 
-    // Tells whether an address has been written
+    // tells whether an address has been written if valid=1 i.e written
     logic valid [0:15];
 
 
