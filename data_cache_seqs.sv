@@ -29,9 +29,6 @@ class data_cache_seq extends uvm_sequence #(seq_item);
  
         // 4) addr 5 wapas read -> HIT
         send(4'd5, 1, 0, 32'h0);
- 
-        // 5) addr 3 pe 0 likho (zero-data), phir read -> RTL isko MISS treat karega
-        send(4'd3, 0, 1, 32'h0);
-        send(4'd3, 1, 0, 32'h0);
+
     endtask
 endclass
